@@ -1,0 +1,315 @@
+ /* --- ESTILOS GENERALES (BASE DEL SITIO PANTER CASE) --- */
+        body {
+            font-family: Arial, sans-serif; /* Usaremos Arial como base, similar al ejemplo */
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Fondo claro */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- HEADER --- */
+        header {
+            background-color: #222; /* Fondo casi negro para la barra superior */
+            color: white;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative; /* Para el posicionamiento del logo y búsqueda */
+        }
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #444; /* Línea separadora */
+        }
+        .header-bottom-nav {
+            background-color: #333; /* Fondo para la barra de navegación inferior del header */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Logo */
+        .header-logo {
+            font-size: 2em; /* Tamaño grande para el logo */
+            font-weight: bold;
+            color: #ff0000; /* Rojo vibrante como en Panter Case */
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            flex-grow: 1; /* Para que ocupe el espacio y empuje la búsqueda */
+            text-align: left; /* Alineado a la izquierda */
+        }
+
+        /* Barra de búsqueda */
+        .search-bar {
+            display: flex;
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 300px; /* Ancho fijo para la barra de búsqueda */
+        }
+        .search-bar input {
+            border: none;
+            padding: 8px 15px;
+            width: calc(100% - 40px); /* Ancho del input menos el botón */
+            outline: none;
+            font-size: 0.9em;
+        }
+        .search-bar button {
+            background-color: #ff0000; /* Botón de búsqueda rojo */
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        /* Navegación principal */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ff0000; /* Color de hover rojo */
+        }
+        .nav-categories {
+            background-color: #ff0000; /* Fondo rojo para la categoría de categorías */
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .nav-categories a {
+            color: white !important; /* Asegura que el texto sea blanco */
+        }
+
+        /* --- SECCIÓN HERO (Primer banner grande) --- */
+        .hero {
+            background-color: #eee;
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 450px; /* Un poco más de altura */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-content {
+            z-index: 2;
+            position: relative;
+            color: #333;
+        }
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.7);
+            z-index: 1;
+        }
+        .hero h2 {
+            font-size: 3.5em; /* Un poco más grande */
+            margin-bottom: 15px;
+            color: white;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+            text-transform: uppercase; /* Mayúsculas como en el ejemplo */
+        }
+        .hero p {
+            font-size: 1.6em; /* Un poco más grande */
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+
+        /* --- SECCIÓN DE VIDEO --- */
+        .video-section {
+            background-color: #f0f0f0;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .video-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #000;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .video-wrapper video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* --- SECCIÓN DE PRODUCTOS/CARACTERÍSTICAS --- */
+        .products-section, .features-section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        .products-section h2, .features-section h2 {
+            font-size: 2.5em; /* Títulos de sección más grandes */
+            margin-bottom: 40px;
+            color: #222;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            justify-content: center;
+        }
+        .product-item {
+            background-color: white;
+            border-radius: 10px; /* Bordes redondeados */
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* Sombra */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Sombra más pronunciada al pasar el mouse */
+        }
+        .product-item img {
+            width: 100%;
+            height: 220px; /* Altura ligeramente menor para las imágenes de producto */
+            object-fit: cover;
+            display: block;
+        }
+        .product-info {
+            padding: 20px;
+            text-align: left;
+        }
+        .product-info h3 {
+            font-size: 1.3em;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .product-info p {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        /* Estilos de precios como en Panter Case */
+        .price-old {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 0.85em;
+        }
+        .price-current {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #222;
+            margin-top: 5px;
+            display: block;
+        }
+        .price-discount {
+            color: #ff0000; /* Rojo para el descuento */
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+        .price-installments {
+            font-size: 0.85em;
+            color: #007bff; /* Azul para las cuotas */
+            margin-top: 5px;
+            display: block;
+        }
+        .price-cash {
+            font-size: 0.9em;
+            color: #28a745; /* Verde para efectivo/transferencia */
+            margin-top: 5px;
+            display: block;
+        }
+
+        /* --- SECCIÓN DE BENEFICIOS --- */
+        .benefits-section {
+            background-color: #222;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .benefits-section h2 {
+            color: white;
+            margin-bottom: 40px;
+        }
+        .benefit-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .benefit-item {
+            flex-basis: 28%;
+            padding: 20px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            min-width: 250px; /* Para que no se achiquen demasiado en pantallas pequeñas */
+        }
+        .benefit-item h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .benefit-item p {
+            font-size: 0.9em;
+            color: #ccc;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            font-size: 0.9em;
+        }
+        footer .container {
+            flex-direction: column;
+            gap: 15px;
+        }
+        footer nav ul li a {
+            color: #aaa;
+        }
+
+        /* --- BOTÓN FLOTANTE DE WHATSAPP --- */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366; /* Color verde de WhatsApp */
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%; /* Forma redonda */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5em; /* Tamaño del icono */
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 10000;
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-button:hover {
+            transform: scale(1.1); /* Efecto de crecimiento al pasar el mouse */
+        }

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estuches artesanales rígidos para instrumentos musicales Pulse Drums A&D GUERRERO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos existentes (supuestos basados en la estructura) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #333;
+            color: white;
+        }
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        .header-logo {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .search-bar {
+            display: flex;
+        }
+        .search-bar input {
+            padding: 8px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+        .search-bar button {
+            padding: 8px 12px;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        .header-bottom-nav {
+            background-color: #444;
+        }
+        .header-bottom-nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .header-bottom-nav li {
+            position: relative;
+        }
+        .header-bottom-nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            transition: background 0.3s;
+        }
+        .header-bottom-nav a:hover {
+            background: #555;
+        }
+        .nav-categories a {
+            background: #007bff;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+        }
+        .hero-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+        }
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+        section {
+            padding: 50px 0;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .product-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .product-item:hover {
+            transform: translateY(-5px);
+        }
+        .product-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .price-old {
+            text-decoration: line-through;
+            color: #999;
+            display: block;
+        }
+        .price-current {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #007bff;
+            display: block;
+        }
+        .price-discount {
+            background: #28a745;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 5px 0;
+        }
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .benefit-item {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            text-decoration: none;
+        }
+        
+        /* Estilos para la galería (nuevos) */
+        .gallery-section {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            cursor: pointer;
+            aspect-ratio: 1 / 1;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        
+        .lightbox-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .close-lightbox {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        
+        .lightbox-nav {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0 20px;
+        }
+        
+        .lightbox-nav button {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            font-size: 24px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .lightbox-nav button:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+        
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+            
+            .header-bottom-nav ul {
+                flex-wrap: wrap;
+            }
+            
+            .header-bottom-nav li {
+                flex: 1 0 50%;
+            }
+            
+            .header-bottom-nav a {
+                text-align: center;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container top-bar-content">
+            <a href="#inicio" class="header-logo">Pulse Drums A&D GUERRERO</a>
+            <div class="search-bar">
+                <input type="text" placeholder="¿Qué estás buscando?">
+                <button type="submit">🔍</button>
+            </div>
+            </div>
+        <div class="header-bottom-nav">
+            <nav>
+                <ul>
+                    <li class="nav-categories"><a href="#productos">CATEGORÍAS</a></li>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#productos">PRODUCTOS</a></li>
+                    <!-- Nueva pestaña de GALERÍA -->
+                    <li><a href="#galeria">GALERÍA</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#sobre-nosotros">POLÍTICA DE DEVOLUCIÓN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <img src="imagenes/IMG-20250711-WA0008.jpg" alt="Estuche Rígido para Pedal de Bombo Kic - Pulse Drums" class="hero-image">
+            <div class="hero-content">
+                <h2></h2>
+                <p></p>
+            </div>
+        </section>
+
+        <!-- Nueva sección de galería -->
+        <section id="galeria" class="gallery-section">
+            <div class="container">
+                <h2>Galería de Nuestros Trabajos</h2>
+                <p>Explora nuestra colección de estuches artesanales fabricados con dedicación y precisión para músicos exigentes.</p>
+                
+                <div class="gallery-grid">
+                    <!-- Imágenes de ejemplo - reemplazar con las reales -->
+                    <div class="gallery-item">
+                        <img src="imagenes/IMG-20250711-WA0009.jpg" alt="Estuche para bombo 20 pulgadas">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagenes/IMG-20250711-WA0021.jpg" alt="Estuche rígido personalizado">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagenes/IMG-20250711-WA0022.jpg" alt="Estuches para transporte seguro">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagenes/IMG-20250711-WA0025.jpg" alt="Estuche para pedales de batería">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagenes/IMG-20250711-WA0010.jpg" alt="Estuche para platos 22 pulgadas">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagenes/IMG-20250711-WA0011.jpg" alt="Variedad de estuches personalizados">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagenes/IMG-20250711-WA0008.jpg" alt="Estuche para pedal de bombo">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagenes/IMG-20250711-WA0021.jpg" alt="Detalle de construcción robusta">
+                    </div>
+                    
+                    <!-- NUEVAS IMÁGENES AGREGADAS CORRECTAMENTE -->
+                    <div class="gallery-item">
+                        <img src="imagenes/piano 2.jpeg" alt="Estuche para piano">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagenes/piano 1.jpeg" alt="Estuche para piano">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <div class="container">
+                <h2>Descubre la Calidad de Nuestros Estuches</h2>
+                <div class="video-wrapper">
+                    <video controls autoplay loop muted>
+                        <source src="imagenes/VID-20250711-WA0020(1).mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos" class="products-section">
+            <div class="container">
+                <h2>Nuestras Creaciones</h2>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="imagenes/IMG-20250711-WA0009.jpg" alt="Conjunto de estuches rígidos artesanales">
+                        <div class="product-info">
+                            <h3>Estuches Rigidos Para Bombos 20,22,24</h3>
+                            <p>Fabricados con precisión para ajustarse perfectamente a cada uno de tus instrumentos.</p>
+                            <span class="price-old">$195.000,00</span>
+                            <span class="price-current">$130.000,00</span>
+                            <span class="price-discount">10% OFF</span>
+                            <span class="price-installments">6 x $21.700,70 sin interés</span>
+                            <span class="price-cash">$149.175,00 con Transferencia o depósito</span>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <img src="imagenes/IMG-20250711-WA0021.jpg" alt="Estuche rígido para instrumento musical">
+                        <div class="product-info">
+                            <h3>Diseño Robusto y Elegante</h3>
+                            <p>Combinamos resistencia y estética en cada detalle para proteger tu pasión.</p>
+                            <span class="price-old">$180.000,00</span>
+                            <span class="price-current">Precios a la medida</span>
+                            <span class="price-discount">10% OFF</span>
+                            <span class="price-installments">consulta precios a tu medida y necesidades </span>
+                            <span class="price-cash">con Transferencia o depósito</span>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <img src="imagenes/IMG-20250711-WA0022.jpg" alt="Estuches listos para el transporte">
+                        <div class="product-info">
+                            <h3>Listos para Cada Aventura</h3>
+                            <p>Viaja con la confianza de que tu equipo estará siempre seguro y protegido.</p>
+                            <span class="price-old">$200.000,00</span>
+                            <span class="price-current">Precios a la medida</span>
+                            <span class="price-discount">10% OFF</span>
+                            <span class="price-installments">consulta precios a tu medida y necesidades</span>
+                            <span class="price-cash">con Transferencia o depósito</span>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <img src="imagenes/IMG-20250711-WA0025.jpg" alt="Detalle del asa de un estuche">
+                        <div class="product-info">
+                            <h3>Estuches Para Pedales</h3>
+                            <p>Asas diseñadas para un transporte cómodo y seguro en todo momento.</p>
+                            <span class="price-old">$150.000,00</span>
+                            <span class="price-current">$95.000,00</span>
+                            <span class="price-discount">10% OFF</span>
+                            <span class="price-installments">6 x $15.900,00 sin interés</span>
+                            <span class="price-cash">$114.750,00 con Transferencia o depósito</span>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <img src="imagenes/IMG-20250711-WA0010.jpg" alt="Detalle de la construcción del estuche">
+                        <div class="product-info">
+                            <h3>Estuches para Platos Hasta 22"</h3>
+                            <p>Detalles que garantizan una vida útil prolongada y protección superior.</p>
+                            <span class="price-old">$160.000,00</span>
+                            <span class="price-current">$110.000,00</span>
+                            <span class="price-discount">10% OFF</span>
+                            <span class="price-installments">6 x $18.500,00 sin interés</span>
+                            <span class="price-cash">con Transferencia o depósito</span>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <img src="imagenes/IMG-20250711-WA0011.jpg" alt="Variedad de estuches para instrumentos">
+                        <div class="product-info">
+                            <h3>Amplia Variedad de Formatos</h3>
+                            <p>Desde pedales hasta baterías completas, tenemos el estuche perfecto para ti.</p>
+                            <span class="price-old">$220.000,00</span>
+                            <span class="price-current">consulta precios a la medida</span>
+                            <span class="price-discount">10% OFF</span>
+                            <span class="price-installments">consulta precios a tu medida y necesidades</span>
+                            <span class="price-cash">con Transferencia o depósito</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <div class="container">
+                <h2>¿Por qué elegir Pulse Drums A&D GUERRERO?</h2>
+                <div class="benefit-grid">
+                    <div class="benefit-item">
+                        <h3>Personalización Total</h3>
+                        <p>Cada estuche es único, creado pensando en las necesidades específicas de tu instrumento.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>Materiales de Calidad</h3>
+                        <p>Utilizamos componentes que aseguran ligereza, resistencia y el mejor acolchado interno.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>Experiencia y Pasión</h3>
+                        <p>Somos artesanos dedicados a proteger la música con cada pieza que creamos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="products-section">
+            <div class="container">
+                <h2>Contáctanos y Haz tu Pedido</h2>
+                <p>Estamos aquí para responder tus preguntas y ayudarte a proteger tu equipo.</p>
+
+                <p><strong>Envíanos un correo:</strong></p>
+                <p><a href="mailto:info@pulsedrums.com.ar?subject=Pedido%20de%20Estuche%20Pulse%20Drums&body=Hola%2C%20me%20interesan%20sus%20estuches.%20Quisiera%20saber%20m%C3%A1s%20sobre%3A" style="background-color: #007bff; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px;">Haz tu Pedido por Email</a></p>
+
+                <p style="margin-top: 30px;">O contáctanos directamente:</p>
+                <p><strong>Teléfono:</strong> +54 9 221 671 5057</p>
+
+                <p style="margin-top: 20px;">
+                    <a href="https://api.whatsapp.com/send/?phone=%2B5492216715057&text&type=phone_number&app_absent=0" target="_blank" style="color: #25D366; text-decoration: none; margin: 0 15px; font-weight: bold;">WhatsApp</a> |
+                    <a href="https://www.instagram.com/pulse_drums?igsh=MWFuY3ZlMGFtNXA1Mg==" target="_blank" style="color: #C13584; text-decoration: none; margin: 0 15px; font-weight: bold;">Instagram</a> |
+                    <a href="https://www.facebook.com/share/1E7UTNhABx/" target="_blank" style="color: #3b5998; text-decoration: none; margin: 0 15px; font-weight: bold;">Facebook</a>
+                </p>
+            </div>
+        </section>
+
+        <section id="sobre-nosotros" class="benefits-section">
+            <div class="container">
+                <h2>Acerca de Pulse Drums A&D GUERRERO</h2>
+                <p>En **Pulse Drums A&D GUERRERO**, nuestra misión es simple: ofrecer la máxima protección para tus instrumentos musicales con estuches artesanales de la más alta calidad. Entendemos el valor de tu equipo y el esfuerzo que pones en tu música.</p>
+                <p>Por eso, cada estuche es diseñado y fabricado con meticulosa atención al detalle, garantizando no solo seguridad, sino también durabilidad y un diseño que complementa tu estilo. ¡Protegemos tu pasión!</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Lightbox para la galería -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox" id="close-lightbox">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="">
+        </div>
+        <div class="lightbox-nav">
+            <button id="prev-button">&#10094;</button>
+            <button id="next-button">&#10095;</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pulse Drums A&D GUERRERO. Todos los derechos reservados.</p>
+            <p>Hecho con dedicación por Alejandro Guerrero, Buenos Aires.</p>
+        </div>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send/?phone=%2B5492216715057&text&type=phone_number&app_absent=0" target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // JavaScript para la funcionalidad de la galería
+        document.addEventListener('DOMContentLoaded', function() {
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            const closeLightbox = document.getElementById('close-lightbox');
+            const nextButton = document.getElementById('next-button');
+            const prevButton = document.getElementById('prev-button');
+            
+            let currentImageIndex = 0;
+            const images = [];
+            
+            // Recopilar todas las imágenes de la galería
+            galleryItems.forEach((item, index) => {
+                const img = item.querySelector('img');
+                images.push({
+                    src: img.getAttribute('src'),
+                    alt: img.getAttribute('alt')
+                });
+                
+                item.addEventListener('click', () => {
+                    openLightbox(index);
+                });
+            });
+            
+            // Abrir lightbox
+            function openLightbox(index) {
+                currentImageIndex = index;
+                updateLightboxImage();
+                lightbox.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; // Prevenir scroll
+            }
+            
+            // Actualizar imagen en el lightbox
+            function updateLightboxImage() {
+                lightboxImage.src = images[currentImageIndex].src;
+                lightboxImage.alt = images[currentImageIndex].alt;
+            }
+            
+            // Cerrar lightbox
+            closeLightbox.addEventListener('click', () => {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Permitir scroll nuevamente
+            });
+            
+            // Cerrar al hacer clic fuera de la imagen
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    lightbox.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+            
+            // Navegación con botones
+            nextButton.addEventListener('click', (e) => {
+                e.stopPropagation();
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                updateLightboxImage();
+            });
+            
+            prevButton.addEventListener('click', (e) => {
+                e.stopPropagation();
+                currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                updateLightboxImage();
+            });
+            
+            // Navegación con teclado
+            document.addEventListener('keydown', (e) => {
+                if (lightbox.style.display === 'flex') {
+                    if (e.key === 'Escape') {
+                        lightbox.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    } else if (e.key === 'ArrowRight') {
+                        currentImageIndex = (currentImageIndex + 1) % images.length;
+                        updateLightboxImage();
+                    } else if (e.key === 'ArrowLeft') {
+                        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                        updateLightboxImage();
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

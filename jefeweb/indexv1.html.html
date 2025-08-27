@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estuches artesanales rígidos para instrumentos musicales Pulse Drums A&DGUERRERO</title>
+    <style>
+        /* Estilos CSS BÁSICOS para simular la estructura de Panter Case.
+           Para un diseño idéntico, se necesita mucho más CSS detallado. */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Simula una fuente moderna */
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Color de fondo claro */
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #ffffff; /* Fondo blanco para el header */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra sutil */
+            padding: 15px 0;
+            position: sticky; /* Sticky header como en el ejemplo */
+            top: 0;
+            z-index: 1000;
+        }
+        .container {
+            max-width: 1200px; /* Ancho máximo del contenido */
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between; /* Para logo y navegación */
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #222;
+            text-decoration: none;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-left: 30px; /* Espacio entre los ítems del menú */
+        }
+        nav ul li a {
+            color: #555;
+            text-decoration: none;
+            font-weight: 600; /* Un poco más de peso */
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #007bff; /* Color de hover similar al ejemplo */
+        }
+
+        /* Sección Hero con imagen de fondo o destacada */
+        .hero {
+            background-color: #eee; /* Color de fondo alternativo para la sección */
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden; /* Para que la imagen no se desborde */
+        }
+        .hero-content {
+            z-index: 2;
+            position: relative;
+            color: #333; /* Color de texto sobre el hero */
+        }
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cubre todo el espacio */
+            filter: brightness(0.8); /* Oscurece un poco la imagen para el texto */
+            z-index: 1;
+        }
+        .hero h2 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            color: white; /* Color blanco para que contraste con la imagen */
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Sombra para mejor lectura */
+        }
+        .hero p {
+            font-size: 1.4em;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        /* Sección del video */
+        .video-section {
+            background-color: #f0f0f0; /* Fondo ligeramente gris */
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .video-wrapper {
+            max-width: 800px; /* Ancho máximo para el video */
+            margin: 0 auto;
+            background: #000; /* Fondo negro para el video */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .video-wrapper video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Sección de productos/características (simulando los bloques del ejemplo) */
+        .products-section, .features-section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #ffffff; /* Fondo blanco */
+        }
+        .products-section h2, .features-section h2 {
+            font-size: 2.2em;
+            margin-bottom: 40px;
+            color: #222;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Columnas responsivas */
+            gap: 30px; /* Espacio entre los productos */
+            justify-content: center;
+        }
+        .product-item {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        .product-item:hover {
+            transform: translateY(-5px); /* Pequeño efecto al pasar el mouse */
+        }
+        .product-item img {
+            width: 100%;
+            height: 250px; /* Altura fija para las imágenes de producto */
+            object-fit: cover; /* Recorta la imagen para llenar el espacio */
+            display: block;
+        }
+        .product-info {
+            padding: 20px;
+            text-align: left;
+        }
+        .product-info h3 {
+            font-size: 1.4em;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .product-info p {
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .product-info .price {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #007bff; /* Color para el precio */
+        }
+
+        /* Sección de beneficios/promociones - similar a la parte inferior del ejemplo */
+        .benefits-section {
+            background-color: #222; /* Fondo oscuro */
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .benefits-section h2 {
+            color: white;
+            margin-bottom: 40px;
+        }
+        .benefit-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .benefit-item {
+            flex-basis: 28%; /* Ajusta el ancho para 3 columnas */
+            padding: 20px;
+            background-color: rgba(255,255,255,0.1); /* Fondo translúcido */
+            border-radius: 8px;
+        }
+        .benefit-item h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .benefit-item p {
+            font-size: 0.9em;
+            color: #ccc;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            font-size: 0.9em;
+        }
+        footer .container {
+            flex-direction: column;
+            gap: 15px;
+        }
+        footer nav ul li a {
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="#inicio" class="logo">Pulse Drums A&DGUERRERO</a>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <img src="image.png" alt="Estuche Rígido para Pedal de Bombo Kic" class="hero-image">
+            <div class="hero-content">
+                <h2>ESTUCHES ARTESANALES RÍGIDOS</h2>
+                <p>PROTECCIÓN TOTAL PARA TU EQUIPO MUSICAL</p>
+                </div>
+        </section>
+
+        <section class="video-section">
+            <div class="container">
+                <h2>Conoce la calidad de nuestros estuches</h2>
+                <div class="video-wrapper">
+                    <video controls autoplay loop muted>
+                        <source src="7d16e081-57b6-42cf-aceb-815520b78a8c" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos" class="products-section">
+            <div class="container">
+                <h2>Nuestra Colección</h2>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="image.png" alt="Estuches rígidos artesanales varios">
+                        <div class="product-info">
+                            <h3>Estuches Artesanales "Custom"</h3>
+                            <p>Hechos a medida, muy livianos y súper resistentes. Diseñados para encajar perfectamente.</p>
+                            </div>
+                    </div>
+
+                    <div class="product-item">
+                        <img src="image.png" alt="Estuche para pedal de bombo">
+                        <div class="product-info">
+                            <h3>Estuche para Pedal de Bombo Kic</h3>
+                            <p>Protección específica y segura para tu pedal. Incluye asa para fácil transporte.</p>
+                            </div>
+                    </div>
+
+                    <div class="product-item">
+                        <img src="image.png" alt="Estuches listos para la ruta">
+                        <div class="product-info">
+                            <h3>Listos para la Ruta</h3>
+                            <p>Tu instrumento siempre protegido, sin importar el destino. Con la durabilidad que necesitas.</p>
+                            </div>
+                    </div>
+
+                    <div class="product-item">
+                        <img src="image.png" alt="Detalle de estuche y asa">
+                        <div class="product-info">
+                            <h3>Detalles que Marcan la Diferencia</h3>
+                            <p>Acabados de calidad y diseño pensado para la máxima funcionalidad y seguridad.</p>
+                            </div>
+                    </div>
+
+                    <div class="product-item">
+                        <img src="image.png" alt="Detalle de estuche, remaches">
+                        <div class="product-info">
+                            <h3>Construcción Robusta</h3>
+                            <p>Cada estuche cuenta con una estructura rígida multilaminada y remaches resistentes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <div class="container">
+                <h2>¿Por qué elegir Pulse Drums A&DGUERRERO?</h2>
+                <div class="benefit-grid">
+                    <div class="benefit-item">
+                        <h3>Diseño Personalizado</h3>
+                        <p>Fabricamos estuches a la medida exacta de tu instrumento, garantizando un ajuste perfecto.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>Máxima Protección</h3>
+                        <p>Materiales resistentes y acolchado interno para la seguridad de tu equipo en todo momento.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>Calidad Artesanal</h3>
+                        <p>Cada estuche es hecho a mano con dedicación y los más altos estándares de calidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="products-section">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <p>Estamos aquí para responder tus preguntas y ayudarte a proteger tu equipo.</p>
+                <p><strong>Email:</strong> tu_email@ejemplo.com</p>
+                <p><strong>Teléfono:</strong> +54 9 11 1234 5678</p>
+                <p>Síguenos en nuestras redes sociales:</p>
+                <p>
+                    <a href="#" style="color: #007bff; text-decoration: none; margin: 0 10px;">Facebook</a>
+                    <a href="#" style="color: #007bff; text-decoration: none; margin: 0 10px;">Instagram</a>
+                </p>
+            </div>
+        </section>
+
+        <section id="sobre-nosotros" class="benefits-section">
+            <div class="container">
+                <h2>Nuestra Historia</h2>
+                <p>En **Pulse Drums A&DGUERRERO**, nuestra pasión es la música y la protección de los instrumentos. Somos artesanos dedicados a crear estuches rígidos, livianos y duraderos que ofrecen la máxima seguridad para tu equipo, sin importar a dónde te lleve la música.</p>
+                <p>Cada estuche es un reflejo de nuestro compromiso con la calidad y la personalización, asegurando que tu instrumento no solo esté protegido, sino que viaje con estilo y confianza.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pulse Drums A&DGUERRERO. Todos los derechos reservados.</p>
+            <p>Diseñado y desarrollado por David con la ayuda de Gemini.</p>
+            </div>
+    </footer>
+
+</body>
+</html>
